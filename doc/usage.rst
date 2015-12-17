@@ -462,7 +462,7 @@ that converts relative URLs to absolute system paths.
         file.seek(0)
         pdf = file.read()
         file.close()            # Don't forget to close the file handle
-        return HttpResponse(pdf, mimetype='application/pdf')
+        return HttpResponse(pdf, content_type='application/pdf')
 
 Reference
 ========
